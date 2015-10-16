@@ -1,0 +1,44 @@
+<template name="GuideItem">
+  <div class="guide-item">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                  <h2>{{title}}</h2>
+                  <h5>Created on {{addedOn}}</h5>
+                  <p class="shared-with"><img src="../img/profile.jpg" alt="Profile" class="avatar-img" />
+                      Shared with Shaun J
+                  </p>
+
+                  <h3>General Advice</h3>
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card general-info">
+                              <div class="card-guide-icon"><i class="fa fa-subway fa-3x"></i></div>
+                              <h4>Public Transit</h4>
+                              <p>.....</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <h3>Tips <a href="{{pathFor route='AddTip' _guideId=this._id}}"><i class="fa fa-plus"></i></a></h3>
+
+                  <div id="container">
+                      {{#each tip}}
+                          <div class="card">
+                              <div class="quote-area area-blue">
+                                <p class="quote">{{shortTip}}</p>
+                              </div>
+                              <img src="/img/bkgd_map.png" class="main-img" alt="Image of {{title}}" />
+                              <h4>{{title}}</h4>
+                              <h6>{{venueType}}</h6>
+                          </div>
+                      {{/each}}
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <p>Google map here</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</template>

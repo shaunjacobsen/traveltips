@@ -1,0 +1,20 @@
+<template name="Guides">
+  <div class="guides">
+      <div class="container">
+          <h1>My Guides</h1>
+          <div class="row">
+              {{#each guides}}
+                  <a href="{{pathFor 'guideItem'}}">
+                  <div class="col-md-3 col-sm-3 card card-guide-list" id="{{_id}}">
+                      <img src="img/places/{{destination}}.jpg" alt="{{destination}}" class="card-main-img" />
+                      <h1>{{destination}}</h1>
+                      <h2>{{title}}</h2>
+                      <p>shared with...</p>
+                      <img src="img/profile.jpg" alt="Profile" class="avatar-img" />
+                  </div>
+                  </a>
+              {{/each}}
+          </div>
+      </div>
+  </div>
+</template>

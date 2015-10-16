@@ -1,0 +1,11 @@
+{
+  "public": {
+  },
+
+  "yelp": {
+    "consumerKey": "0rIQAWcg80aaOj4gWqjffQ",
+    "consumerSecret": "newnFNOKTSZQ4OVhwP9QQcvD_sQ",
+    "token": "wvKP4gRNRapKeePwBLDF3WGHa4DGcQSC",
+    "tokenSecret": "oBr2mZ5iPVeVfHmeP6eWFN5CbBQ"
+  }
+}

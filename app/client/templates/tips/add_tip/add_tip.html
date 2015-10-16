@@ -1,0 +1,98 @@
+<template name="AddTip">
+  <div class="add-tip">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h1>Add Tip to {{currentGuide}}</h1>
+              </div>
+          </div>
+          <h3>Add via Yelp</h3>
+          <div class="row">
+              <div class="col-md-12">
+                  {{> YelpAdd}}
+              </div>
+          </div>
+          <h3>Add Manually</h3>
+          <div class="row">
+              <div class="col-md-12">
+                  <form>
+                      <label class="radio-inline">
+                          <input type="radio" name="type" value="genAdvice"> General Advice
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="type" value="poi"> Place
+                      </label>
+
+                        <br /><br />
+
+                      <div class="switch-form" id="typepoi" style="display: none;">
+                          <div class="form-group">
+                              <label for="titleInput">Title</label>
+                              <input type="text" class="form-control" name="title" id="titleInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="geoTypeInput">Point</label>
+                              <input type="text" class="form-control" name="geoType" id="geoTypeInput" placeholder="Point" disabled />
+                          </div>
+                          {{#each venuetypes}}
+                              <div class="radio">
+                                  <label>
+                                      <input type="radio" name="venueType" value="{{title}}">
+                                      {{title}}
+                                  </label>
+                              </div>
+                          {{/each}}
+                          <div class="form-group">
+                              <label for="categoriesInput">Categories</label>
+                              <input type="text" class="form-control" name="venueCategories" id="categoriesInput" placeholder="comma-separated" />
+                          </div>
+                          <div class="form-group">
+                              <label for="neighborhoodInput">Neighborhood</label>
+                              <input type="text" class="form-control" name="neighborhood" id="neighborhoodInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="streetInput">Street</label>
+                              <input type="text" class="form-control" name="street" id="streetInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="cityInput">City</label>
+                              <input type="text" class="form-control" name="city" id="cityInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="regionInput">State/Province</label>
+                              <input type="text" class="form-control" name="region" id="regionInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="postalInput">Postal Code</label>
+                              <input type="text" class="form-control" name="postal" id="postalInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="phoneInput">Phone</label>
+                              <input type="text" class="form-control" name="phone" id="phoneInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="websiteInput">Website</label>
+                              <input type="text" class="form-control" name="website" id="websiteInput" />
+                          </div>
+                          <div class="form-group">
+                              <label for="yelpIdInput">Yelp Business ID</label>
+                              <input type="text" class="form-control" name="yelpId" id="yelpIdInput" placeholder="e.g. thai-on-clark-chicago" />
+                          </div>
+                          <div class="form-group">
+                              <label for="shortTipInput">Your Comment</label>
+                              <input type="text" class="form-control" name="shortTip" id="shortTipInput" placeholder="a short comment about this place you'd like to share" />
+                          </div>
+
+                          <button type="submit" class="btn btn-primary">Add</button>
+                          
+                      </div>
+
+                      <div class="switch-form" id="typegenAdvice" style="display: none;">
+                          <p>General Advice Form</p>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</template>

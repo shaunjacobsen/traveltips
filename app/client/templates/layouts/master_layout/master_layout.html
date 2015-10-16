@@ -1,0 +1,15 @@
+<template name="MasterLayout">
+    <div class="container">
+        <div class="row">
+            {{> errors}}
+            <div class="nav">
+                {{> nav}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {{> yield}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,17 @@
+<template name="errors">
+    <div class="container">
+        {{#each errors}}
+            {{> error}}
+        {{/each}}
+    </div>
+</template>
+
+<template name="error">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="top-alert">
+                <p><strong>Error:</strong> {{message}}</p>
+            </div>
+        </div>
+    </div>
+</template>

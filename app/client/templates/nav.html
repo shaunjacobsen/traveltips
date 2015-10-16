@@ -1,0 +1,21 @@
+<template name="nav">
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="nav-left">
+                    <a href="{{pathFor 'guides'}}"><h2>wander<strong>away</strong></h2></a>
+                </div>
+
+                <div class="col-md-5" id="nav-middle">
+
+                </div>
+
+                <div class="col-md-3 navbar-right" id="nav-right">
+                    <span class="navbar-right">
+                        <li>{{> loginButtons}}</li>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</template>

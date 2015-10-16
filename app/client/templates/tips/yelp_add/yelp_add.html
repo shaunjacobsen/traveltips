@@ -1,0 +1,13 @@
+<template name="YelpAdd">
+  <div class="yelp-add">
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                {{#with guides}}
+                <input type="text" class="form-control" placeholder="Type the name of a business or location in {{destination}}..." disabled />
+                    {{/with}}
+            </form>
+        </div>
+    </div>
+  </div>
+</template>

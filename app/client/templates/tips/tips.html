@@ -1,0 +1,18 @@
+<template name="Tips">
+  <div class="tips">
+      <div class="container">
+        <h1>Places to Go</h1>
+          <div class="row">
+              {{#each tips}}
+              <div class="col-md-3 card" id="{{_id}}">
+                  <h1>{{title}}</h1>
+                  <h2>{{venueType}} in {{neighborhood}}</h2>
+                  <img src="img/saraghina.png" class="center-block img-responsive pull-left no-border" />
+                  <p class="address">{{streetAdd}}, {{city}} {{region}} {{postal}}</p>
+                  <blockquote>{{getAQuote}}</blockquote>
+              </div>
+              {{/each}}
+          </div>
+      </div>
+  </div>
+</template>

@@ -1,0 +1,53 @@
+/*****************************************************************************/
+/* Tips: Style */
+/*****************************************************************************/
+.tips h1 {
+    font-family: "Permanent Marker", "Helvetica", Arial, sans-serif;
+    font-size: 72px;
+}
+
+.tips table {
+    margin: 15px;
+}
+
+.tips table .info {
+    min-width: 250px;
+}
+
+.tips .title {
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+.tips .label {
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.tips .address {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.tips blockquote > img {
+    border: 1px solid #fff;
+    display: inline;
+    float: left;
+    margin-right: 15px;
+}
+
+.tips blockquote {
+    border: none;
+    font-family: "Satisfy", "Helvetica", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.tips .transit {
+    display: inline;
+    font-size: 12px;
+    font-family: "Helvetica";
+    font-weight: 600;
+}
